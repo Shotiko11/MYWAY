@@ -5,12 +5,13 @@
 }
 
 .navbar{
-    width: 85%;
+    width: 100%;
     margin: auto;
-    padding: 35px 0;
+    padding: 15px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: rgb(247, 247, 247);
 }
 
 .logo {
@@ -29,7 +30,7 @@
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 540;
 }
 
 .navbar ul li::after {
