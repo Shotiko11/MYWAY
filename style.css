@@ -50,3 +50,7 @@ section {
     width: 100%;
     transition: width 700ms ease;
 }
+
+.swiper-slide video {
+    width: 100%;
+}
