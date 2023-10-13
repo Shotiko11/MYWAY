@@ -54,3 +54,74 @@ section {
 .swiper-slide video {
     width: 100%;
 }
+
+.swiper-btns {
+    max-width: 880px;
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 0;
+}
+
+[class*="swiper-button"] {
+    width: 70px;
+    height: 70px; 
+    border-radius: 50%;
+    display: inline-flex;
+    background-color: #8d8cff;
+    color: #fff;
+    margin-top: 0;
+    top: 0;
+    --swiper-navigation-size: 50px;
+}
+
+[class*="swiper-button"]:hover {
+    background-color: #6e6df7;
+}
+
+h3 {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    left: 20px;
+    bottom: 20px;
+    z-index: 11;
+}
+
+h3 span {
+    display: block;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    letter-spacing: 3;
+}
+
+h3 span small {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 100;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 0;
+    letter-spacing: 1px;
+}
+
+h3 span small::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+}
