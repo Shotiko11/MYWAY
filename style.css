@@ -36,3 +36,11 @@ section {
     position: relative;   
 }
 
+.slider-video {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    line-height: 0;
+    border-radius: 20px;
+    box-shadow: 1px -1px 20px #28272780;
+}
