@@ -19,20 +19,3 @@ video {
     margin-top: 20px;
     margin-right: 20px;
 }
-
-.slidier {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.videos {
-    display: flex;
-    overflow: hidden;
-}
-
-button {
-    margin: 10px;
-}
