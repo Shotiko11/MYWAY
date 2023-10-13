@@ -26,36 +26,3 @@ video {
     margin-top: 20px;
     margin-right: 20px;
 }
-
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    background-size: cover;
-    position: relative;
-    width: 500px; 
-    height: 100px; 
-    transform-style: preserve-3d;
-    animation: animate 20s linear infinite;
-    margin: 0 auto; 
-}
-
-.swiper-container {
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-}
-
-.swiper-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
