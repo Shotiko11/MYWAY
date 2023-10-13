@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="video-container">
+      <video id="videoPlayer" controls>
+        <source src="zhima.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="video-slider">
+      <button class="slider-button" data-src="sliderone.mp4">Video 1</button>
+      <button class="slider-button" data-src="slidertwo.mp4">Video 2</button>
+      <button class="slider-button" data-src="sliderthree.mp4">Video 3</button>
+      <button class="slider-button" data-src="sliderfour.mp4">Video 4</button>
+      <button class="slider-button" data-src="sliderfive.mp4">Video 5</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
