@@ -11,8 +11,9 @@ body {
 
 video {
     width: 100%;
-    height: 550px;
+    height: 420px;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 #logo {
@@ -43,6 +44,7 @@ video {
 .swiper-container {
     width: 100%;
     height: 100%;
+    margin-top: 40px;
 }
 
 .swiper-slide {
