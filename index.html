@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1,
+    maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -14,26 +23,41 @@
       </video>
     </div>
 
-    <div class="slider">
-      <div class="videos">
-        <video id="video1" class="slider-video" autoplay muted>
-          <source src="zsliderone.mp4" type="video/mp4" />
-        </video>
-        <video id="video2" class="slider-video" autoplay muted>
-          <source src="zslidertwo.mp4" type="video/mp4" />
-        </video>
-        <video id="video3" class="slider-video" autoplay muted>
-          <source src="zsliderthree.mp4" type="video/mp4" />
-        </video>
-        <video id="video4" class="slider-video" autoplay muted>
-          <source src="zsliderfour.mp4" type="video/mp4" />
-        </video>
-        <video id="video5" class="slider-video" autoplay muted>
-          <source src="zsliderfive.mp4" type="video/mp4" />
-        </video>
+    <div class="box">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <video class="swiper-video" autoplay muted>
+              <source src="zsliderone.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <video class="swiper-video" autoplay muted>
+              <source src="zslidertwo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <video class="swiper-video" autoplay muted>
+              <source src="zsliderthree.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <video class="swiper-video" autoplay muted>
+              <source src="zsliderfour.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <video class="swiper-video" autoplay muted>
+              <source src="zsliderfive.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 
     <img src="zlogo.png" alt="Logo" id="logo" />

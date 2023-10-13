@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -18,4 +24,36 @@ video {
     height: auto; 
     margin-top: 20px;
     margin-right: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-size: cover;
+    position: relative;
+    width: 500px; /* Increased width */
+    height: 100px; /* Further reduced height */
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    margin: 0 auto; /* Center the .box horizontally */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.swiper-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
