@@ -16,6 +16,8 @@ video {
     top: 0;
     right: 0;
     z-index: 1;
-    width: 100px; 
+    width: 250px; 
     height: auto; 
+    margin-top: 10px;
+    margin-right: 10px;
 }
