@@ -33,12 +33,6 @@ video {
     overflow: hidden;
 }
 
-video {
-    width: 100%;
-    max-width: 800px;
-    display: none;
-}
-
 button {
     margin: 10px;
 }
