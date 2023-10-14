@@ -98,9 +98,10 @@
             const videos = document.querySelectorAll(".slider-video video");
             const activeIndex = this.realIndex;
             const activeVideo = videos[activeIndex];
-            Array.prototype.forEach.call(videos, function (video) {
+            Array.prototype.forEach.call(videos, function (video, index) {
               video.pause();
               video.currentTime = 0;
+              video.style.opacity = index === activeIndex ? 1 : 0.5;
             });
             activeVideo.play();
           },
@@ -108,9 +109,10 @@
             const videos = document.querySelectorAll(".slider-video video");
             const activeIndex = this.realIndex;
             const activeVideo = videos[activeIndex];
-            Array.prototype.forEach.call(videos, function (video) {
+            Array.prototype.forEach.call(videos, function (video, index) {
               video.pause();
               video.currentTime = 0;
+              video.style.opacity = index === activeIndex ? 1 : 0.5;
             });
             activeVideo.play();
           },
@@ -118,6 +120,7 @@
       });
     </script>
     <img src="zlogo.png" alt="Logo" id="logo" />
+    <script src="script.js"></script>
   </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
