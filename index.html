@@ -16,6 +16,12 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-spinner"></div>
+      </div>
+    </div>
+
     <div class="video-container">
       <video id="videoPlayer" controls>
         <source src="zhima.mp4" type="video/mp4" />
@@ -23,16 +29,16 @@
       </video>
     </div>
 
-    <!-- dsadsa -->
+    
     <section>
       <div class="swiper-btns">
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
       <div class="swiper">
-        <!-- Additional required wrapper -->
+        
         <div class="swiper-wrapper">
-          <!-- Slides -->
+        
           <div class="swiper-slide">
             <h3>
               <span>First <small>Firstly</small></span>
@@ -80,10 +86,21 @@
         </div>
       </div>
     </section>
-    <!-- dsadsadsa -->
+    
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+      
+      function removePreloader() {
+        setTimeout(function () {
+          document.querySelector("body").classList.add("loaded");
+          const preloader = document.querySelector(".preloader");
+          preloader.style.display = "none";
+        }, 5000); 
+      }
+
+      window.addEventListener("load", removePreloader);
+
       const swiper = new Swiper(".swiper", {
         loop: false,
         slidesPerView: "auto",
