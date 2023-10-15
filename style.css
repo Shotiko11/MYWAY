@@ -45,6 +45,17 @@ section {
   box-shadow: 1px -1px 20px #49484880;
 }
 
+.slider-video video {
+  width: 100%;
+  opacity: 0.5; 
+  transition: opacity 2s; 
+}
+
+.slider-video video.active {
+  opacity: 1; 
+}
+
+
 .swiper-slide {
   max-width: 800px;
   width: 100%;
@@ -143,20 +154,28 @@ h3 span small::before {
 }
 
 .preloader-spinner {
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db; 
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 2s linear infinite;
+  width: 150px; 
+  height: 120px; 
+  animation: fill 5s linear forwards;
+  transform-origin: center;
 }
 
-@keyframes spin {
+.preloader-text {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+@keyframes fill {
   0% {
-    transform: rotate(0deg);
+    background-color: #f3f3f3; 
+    transform: scaleX(0);
   }
   100% {
-    transform: rotate(360deg);
+    background-color: #3498db; 
+    transform: scaleX(1);
   }
 }
 
@@ -164,3 +183,4 @@ body.loaded .preloader {
   opacity: 0;
   pointer-events: none;
 }
+
