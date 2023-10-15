@@ -4,11 +4,10 @@ let dotCount = 0;
 function updateLoadingText() {
   const dots = ".".repeat(dotCount);
   loadingText.textContent = `Loading${dots}`;
-  dotCount = (dotCount % 3) + 1 ; 
+  dotCount = (dotCount % 3) + 1;
 }
 
-setInterval(updateLoadingText, 600); 
-
+setInterval(updateLoadingText, 600);
 
 swiper.on("slideChange", function () {
   const slides = document.querySelectorAll(".swiper-slide");
