@@ -21,7 +21,9 @@
         <div class="preloader-spinner">
           <div class="welcome-text">Welcome</div>
         </div>
-        <div class="preloader-text">Loading...</div>
+        <div class="preloader-text">
+          <span id="loading-text">Loading</span>
+        </div>
       </div>
     </div>
 
@@ -32,16 +34,13 @@
       </video>
     </div>
 
-    
     <section>
       <div class="swiper-btns">
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
       <div class="swiper">
-        
         <div class="swiper-wrapper">
-        
           <div class="swiper-slide">
             <h3>
               <span>First <small>Firstly</small></span>
@@ -89,17 +88,15 @@
         </div>
       </div>
     </section>
-    
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      
       function removePreloader() {
         setTimeout(function () {
           document.querySelector("body").classList.add("loaded");
           const preloader = document.querySelector(".preloader");
           preloader.style.display = "none";
-        }, 5000); 
+        }, 5000);
       }
 
       window.addEventListener("load", removePreloader);
