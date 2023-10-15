@@ -184,3 +184,12 @@ body.loaded .preloader {
   pointer-events: none;
 }
 
+.welcome-text {
+  text-align: center;
+  font-size: 24px;
+  color: #fff; /* Text color */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the text */
+}
