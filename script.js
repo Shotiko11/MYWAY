@@ -7,4 +7,4 @@ function updateLoadingText() {
   dotCount = (dotCount % 3) + 1 ; 
 }
 
-setInterval(updateLoadingText, 500); 
+setInterval(updateLoadingText, 450); 
