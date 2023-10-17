@@ -26,15 +26,43 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
-          entry.target.classList.add('show');
-        }, 5000); 
+          entry.target.classList.add("show");
+        }, 5000);
       } else {
-        entry.target.classList.remove('show');
+        entry.target.classList.remove("show");
       }
     });
   });
-  
-  const hiddenElements = document.querySelectorAll('.hidden');
+
+  const hiddenElements = document.querySelectorAll(".hidden");
   hiddenElements.forEach((el) => observer.observe(el));
+
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.bottom >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+  }
+
+  function applyParallaxEffect(element, speed) {
+    window.addEventListener("scroll", () => {
+      const scroll = window.scrollY;
+      element.style.transform = `translateY(${scroll * speed}px)`;
+    });
+  }
+
+
+
+  function removePreloader() {
+    setTimeout(function () {
+      document.querySelector("body").classList.add("loaded");
+      const preloader = document.querySelector(".preloader");
+      preloader.style.display = "none";
+    }, 5000);
+  }
+
+  window.addEventListener("load", removePreloader);
+
   
 });
